@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/cat_img"
+            android:src="@drawable/nwessss" />
+
+        <in.yellowsoft.LetUKnow.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/cat_name"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+        <in.yellowsoft.LetUKnow.MyTextView
+            android:text="Follow"
+            android:id="@+id/follow_btn"
+            android:textColor="@color/aa_app_blue"
+            android:gravity="center"
+            android:singleLine="true"
+            android:background="@drawable/border_empty_for_add"
+            android:textStyle="bold"
+            android:layout_width="80dp"
+            android:layout_height="30dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/aa_menu_bar"></LinearLayout>
+
+</LinearLayout>

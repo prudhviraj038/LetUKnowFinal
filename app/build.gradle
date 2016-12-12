@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "in.yellowsoft.LetUKnow"
+//        vectorDrawables.useSupportLibrary = true
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'LICENSE.txt'
+        exclude 'jsr305_annotations/Jsr305_annotations.gwt.xml'
+
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.2.1'
+    compile 'com.google.firebase:firebase-messaging:9.4.0'
+    compile 'com.google.firebase:firebase-analytics:9.4.0'
+    compile 'com.google.firebase:firebase-crash:9.4.0'
+
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'pl.droidsonroids.gif:android-gif-drawable:1.2.1'
+    compile 'com.davemorrissey.labs:subsampling-scale-image-view:3.5.0'
+    compile 'com.minimize.library:seekbar-compat:0.2.4'
+    compile files('libs/volley.jar')
+    compile 'com.labo.kaji:fragmentanimations:0.1.0'
+    compile files('libs/YouTubeAndroidPlayerApi.jar')
+    compile project(':jwplayer-android-sdk-2.5.2+163')
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.google.firebase:firebase-ads:9.4.0'
+}
+apply plugin: 'com.google.gms.google-services'
+
+

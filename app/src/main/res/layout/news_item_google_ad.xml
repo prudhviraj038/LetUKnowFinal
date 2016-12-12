@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/aaaaaaaaaa"
+    android:background="#EAEAEA">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <view
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                class="in.yellowsoft.LetUKnow.SquareImageview"
+                android:id="@+id/view2"
+                 />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignTop="@+id/view2"
+                android:layout_alignBottom="@+id/view2"
+                android:layout_alignRight="@+id/view2"
+                android:layout_alignLeft="@+id/view2"
+                android:background="@drawable/border_for_news_item">
+
+                <!--<view-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--class="com.google.android.gms.ads.BaseAdView"-->
+                    <!-- -->
+                    <!--android:id="@+id/view3" />-->
+                <com.google.android.gms.ads.NativeExpressAdView
+                    android:id="@+id/adView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    ads:adUnitId="@string/banner_ad_id"
+                    ads:adSize="320X320"
+                    android:layout_centerInParent="true">
+                </com.google.android.gms.ads.NativeExpressAdView>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

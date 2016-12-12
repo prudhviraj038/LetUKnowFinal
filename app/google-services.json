@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "510662327462",
+    "firebase_url": "https://letuknow-da55f.firebaseio.com",
+    "project_id": "letuknow-da55f",
+    "storage_bucket": "letuknow-da55f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:510662327462:android:8e79e28838dae6e1",
+        "android_client_info": {
+          "package_name": "in.yellowsoft.LetUKnow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "510662327462-3qqnm35i78p72s2791kn16pgph692tue.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5Y-ZUm20BEjhU_E-CYKD5l67Ow7j4zVE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

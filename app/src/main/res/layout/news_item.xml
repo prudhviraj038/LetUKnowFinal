@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/aaa"
+    android:background="#EAEAEA">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border_for_news_item"
+        android:padding="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/logo"
+                    android:src="@drawable/logo_news"
+                    android:adjustViewBounds="false" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <in.yellowsoft.LetUKnow.MyTextView1
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="News"
+                        android:id="@+id/news_ch_title"
+                        android:textColor="#21a6e0"
+                        android:textSize="16sp"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp" />
+                    <in.yellowsoft.LetUKnow.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24 July"
+                        android:id="@+id/news_time2"
+                        android:textColor="#696969"
+                        android:singleLine="true"
+                        android:gravity="right"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/border_full_redcolor"
+                        android:id="@+id/is_urgent"
+                        android:visibility="visible">
+
+                        <in.yellowsoft.LetUKnow.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Urgent"
+                            android:id="@+id/is_urgent_tv"
+                            android:textColor="#ffffff"
+                            android:textSize="14sp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp" />
+                    </LinearLayout>
+
+                    <in.yellowsoft.LetUKnow.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="24 July"
+                        android:id="@+id/news_timee"
+                        android:textColor="#696969"
+                        android:singleLine="true"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/bbb"
+            android:padding="2dp">
+
+            <in.yellowsoft.LetUKnow.MyTextView1
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="News News News"
+                android:id="@+id/news_title"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:id="@+id/news_img"
+                android:src="@drawable/nwessss"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/video_hint"
+                android:layout_centerInParent="true"
+                android:src="@drawable/video" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/share_btn_item"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/share_blue"
+                android:tint="@color/aa_app_blue" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

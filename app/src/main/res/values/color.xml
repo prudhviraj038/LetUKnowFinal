@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="aa_app_blue">#f5a305</color>
+    <color name="aa_menu_bar">#696969</color>
+    <color name="aa_menu_bar_trans">#ffffff</color>
+    <color name="aa_menu_bar_icon">#727272</color>
+    <color name="aa_menu_line">#696969</color>
+    <color name="aa_menu_text">#696969</color>
+    <color name="aa_menu_text_selected">#f5a305</color>
+    <color name="settings_txt_color">#383838</color>
+    <color name="settings_bg_color">#ecebf1</color>
+    <color name="settings_line_color">#e0e0e0</color>
+</resources>

@@ -1,0 +1,720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ViewFlipper
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/viewFlipper4" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ggg">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/aa_app_blue"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:baselineAligned="false"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:divider="@drawable/divider_menu_icons_space"
+                        android:showDividers="beginning|middle|end">
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:id="@+id/back_img"
+                            android:src="@drawable/back_btn_white" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:gravity="right">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:divider="@drawable/divider_menu_icons_space"
+                            android:showDividers="beginning|middle|end"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/font_adjust"
+                                android:src="@drawable/font_white" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:divider="@drawable/divider_menu_icons_space"
+                            android:showDividers="beginning|middle|end"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/world_details"
+                                android:src="@drawable/world_icon_white" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:divider="@drawable/divider_menu_icons_space"
+                            android:showDividers="beginning|middle|end"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="@dimen/menu_icon_size"
+                                android:layout_height="@dimen/menu_icon_size"
+                                android:id="@+id/star_detail"
+                                android:src="@drawable/star_white"
+                                android:visibility="visible" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:divider="@drawable/divider_menu_icons_space"
+                            android:showDividers="beginning|middle|end"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:visibility="gone">
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/imageView5"
+                                android:src="@drawable/comments" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:divider="@drawable/divider_menu_icons_space"
+                            android:showDividers="beginning|middle|end"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp" >
+
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:id="@+id/share_btn_detail"
+                                android:src="@drawable/share_white"
+                                android:scaleType="fitXY" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/aa_menu_line"
+                    android:visibility="gone" />
+
+                <ViewFlipper
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/viewFlipper5" >
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/jk" >
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="#ffffff"
+                            android:padding="10dp"
+                            android:id="@+id/detail_scroll">
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:baselineAligned="false">
+
+                                <LinearLayout
+                                    android:orientation="horizontal"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical" >
+
+                                    <ImageView
+                                        android:layout_width="50dp"
+                                        android:layout_height="50dp"
+                                        android:id="@+id/logo"
+                                        android:src="@drawable/logo_news"
+                                        android:adjustViewBounds="false" />
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1">
+
+                                        <in.yellowsoft.LetUKnow.MyTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="News"
+                                            android:id="@+id/news_title"
+                                            android:textColor="#21a6e0"
+                                            android:textSize="18sp"
+                                            android:gravity="right"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:singleLine="true" />
+                                        <in.yellowsoft.LetUKnow.MyTextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:text="24 July"
+                                            android:id="@+id/news_time22"
+                                            android:textColor="#696969"
+                                            android:gravity="right"
+                                            android:paddingLeft="10dp"
+                                            android:paddingRight="10dp"
+                                            android:singleLine="true" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:orientation="vertical"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginLeft="5dp"
+                                        android:layout_marginRight="5dp"
+                                        android:gravity="right">
+
+                                        <LinearLayout
+                                            android:orientation="horizontal"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:gravity="center_vertical"
+                                            android:background="@drawable/border_full_redcolor"
+                                            android:id="@+id/is_urgent"
+                                            android:visibility="visible">
+
+                                            <in.yellowsoft.LetUKnow.MyTextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="Urgent"
+                                                android:id="@+id/com.mamacgroup.nashr.MyTextView"
+                                                android:textColor="#ffffff"
+                                                android:textSize="14sp" />
+                                        </LinearLayout>
+
+                                        <in.yellowsoft.LetUKnow.MyTextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:text="24 July"
+                                            android:id="@+id/news_time"
+                                            android:textColor="#696969"
+                                            android:gravity="center"
+                                            android:visibility="gone" />
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/bbb"
+                                android:padding="2dp">
+
+                                <in.yellowsoft.LetUKnow.MyTextView1
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="News News News"
+                                    android:id="@+id/news_descri"
+                                    android:textColor="#000"
+                                    android:textSize="19sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/bbbdd"
+                                android:padding="2dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp">
+
+                                <in.yellowsoft.LetUKnow.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="News  "
+                                    android:id="@+id/news_time3"
+                                    android:textColor="#696969"
+                                    android:gravity="right"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/news_img_layout">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="170dp"
+                                    android:id="@+id/news_img"
+                                    android:src="@drawable/nwessss"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginBottom="5dp"
+                                    android:scaleType="centerCrop" />
+
+                                <com.daimajia.slider.library.SliderLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="170dp"
+                                    android:id="@+id/img_slider" />
+
+                                <ImageView
+                                    android:layout_width="80dp"
+                                    android:layout_height="80dp"
+                                    android:id="@+id/video_hint"
+                                    android:layout_centerInParent="true"
+                                    android:src="@drawable/video" />
+                            </RelativeLayout>
+
+                            <in.yellowsoft.LetUKnow.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                                android:id="@+id/news_description_big"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:textSize="18sp"
+                                android:textIsSelectable="false"
+                                android:textColor="#000" />
+
+                            <WebView
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:id="@+id/webView3" />
+
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="5dp">
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:id="@+id/email_share"
+                                    android:src="@drawable/notification2"
+                                    android:layout_margin="5dp" />
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:id="@+id/instagram_share"
+                                    android:src="@drawable/inst_icon"
+                                    android:layout_margin="5dp" />
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:id="@+id/facebook_share"
+                                    android:src="@drawable/face_icon"
+                                    android:layout_margin="5dp" />
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:id="@+id/twitter_share"
+                                    android:src="@drawable/twitter_icon"
+                                    android:layout_margin="5dp" />
+
+                                <ImageView
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:id="@+id/watsapp_share"
+                                    android:src="@drawable/watsapp_icon"
+                                    android:layout_margin="5dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="30dp"
+                                android:background="@drawable/pop_up_rounded_light"
+                                android:layout_marginTop="15dp"
+                                android:id="@+id/read_more_ll"
+                                android:layout_marginBottom="25dp">
+
+                                <in.yellowsoft.LetUKnow.MyTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="New Text"
+                                    android:id="@+id/read_more_tv"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:layout_marginTop="15dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:textSize="15sp"
+                                    android:textColor="#000"
+                                    android:singleLine="true" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </ScrollView>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></LinearLayout>
+
+                </ViewFlipper>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/font_size_layout"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="120dp"
+                android:id="@+id/font_adjust_view"
+                android:visibility="gone">
+
+                <in.yellowsoft.LetUKnow.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Font Size"
+                    android:id="@+id/com.mamacgroup.nashr.MyTextView18"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <in.yellowsoft.LetUKnow.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A"
+                        android:id="@+id/com.mamacgroup.nashr.MyTextView16"
+                        android:textSize="16sp"
+                        android:textColor="#000000" />
+
+                    <app.minimize.com.seek_bar_compat.SeekBarCompat
+                        android:id="@+id/materialSeekBar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxHeight="300sp"
+                        app:progressColor="@color/aa_app_blue"
+                        app:progressBackgroundColor="#ffffff"
+                        app:thumbColor="#DEDEDE"
+                        app:thumbAlpha="4.0"
+                        android:layout_weight="1" />
+
+                    <in.yellowsoft.LetUKnow.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A"
+                        android:id="@+id/com.mamacgroup.nashr.MyTextView17"
+                        android:textSize="26sp"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#57bebebe"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"></LinearLayout>
+
+                <in.yellowsoft.LetUKnow.MyTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Font Style"
+                    android:id="@+id/com.mamacgroup.nashr.MyTextView19"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:showDividers="none">
+
+                    <in.yellowsoft.LetUKnow.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Normal"
+                        android:id="@+id/text_normal"
+                        android:background="@drawable/border_full_appcolor_font"
+                        android:textColor="#FFFFFF" />
+
+                    <in.yellowsoft.LetUKnow.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bold"
+                        android:id="@+id/text_bold"
+                        android:background="@drawable/border_empty_appcolor_font" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#92000000"
+                android:id="@+id/share_ll"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/pop_up_rounded"
+                    android:touchscreenBlocksFocus="false"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:id="@+id/imageView40"
+                            android:src="@drawable/close_icon_white"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:visibility="invisible" />
+
+                        <in.yellowsoft.LetUKnow.MyTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Share"
+                            android:id="@+id/pop_up_label"
+                            android:textColor="#000000"
+                            android:textSize="18sp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="25dp"
+                            android:id="@+id/close_img"
+                            android:src="@drawable/close_icon_white"
+                            android:adjustViewBounds="true" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/aa_menu_line" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/ins_share"
+                                android:src="@drawable/instagram_square"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/face_share"
+                                android:src="@drawable/face_book_square"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/twi_share"
+                                android:src="@drawable/twitter_square"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/wat_share"
+                                android:src="@drawable/whats_up_square"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp">
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/gplus_share"
+                                android:src="@drawable/google_plus_square"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/lin_share"
+                                android:src="@drawable/linkedin_square"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/ssms_share"
+                                android:src="@drawable/messaging_icon"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1" />
+
+                            <ImageView
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:id="@+id/ema_share"
+                                android:src="@drawable/mail_icon_square"
+                                android:layout_margin="5dp"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/aa_app_blue"
+                            android:id="@+id/ssssss"
+                            android:visibility="gone"></LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/aa_menu_line" />
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ListView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/listView2"
+                                android:divider="#e0e0e0"
+                                android:dividerHeight="1dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+
+    </ViewFlipper>
+
+</LinearLayout>

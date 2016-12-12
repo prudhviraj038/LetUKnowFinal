@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:components="http://schemas.android.com/apk/res-auto"
+    xmlns:class="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/aa_app_blue"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:baselineAligned="false"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/linearLayout4"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="@dimen/header_icon_size"
+                        android:layout_height="@dimen/header_icon_size"
+                        android:id="@+id/search_btn"
+                        android:src="@drawable/search_ic_white"
+                        android:adjustViewBounds="false"
+                        android:tint="#FFFFFF" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:baselineAligned="false"
+                    android:gravity="center" >
+
+                    <in.yellowsoft.LetUKnow.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="world_fragment"
+                        android:id="@+id/lable"
+                        android:textSize="16sp"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:divider="@drawable/divider_menu_icons_space"
+                    android:showDividers="beginning|middle|end"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/linearLayout5">
+
+                    <ImageView
+                        android:layout_height="25dp"
+                        android:id="@+id/set_btn"
+                        android:src="@drawable/stngs_ic"
+                        android:adjustViewBounds="false"
+                        android:layout_width="22dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:animateLayoutChanges="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/search_rl">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFFF"
+                    android:id="@+id/search_view_back">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:id="@+id/custom_header_layout"
+                            android:padding="0.5dp">
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/imageView12"
+                            android:src="@drawable/home_rounded_corners_white_company_page" />
+                    </FrameLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/aa_menu_line"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:baselineAligned="false"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:id="@+id/search_view"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:gravity="center_vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="@dimen/menu_icon_size"
+                            android:layout_height="@dimen/menu_icon_size"
+                            android:src="@drawable/search_btn"
+                            android:adjustViewBounds="false" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:gravity="center"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/roundedcorners">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:hint="Type to Search"
+                            android:textSize="14sp"
+                            android:background="#FFFFFF"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:gravity="center"
+                            android:id="@+id/search_edit"
+                            android:textColor="#000"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:divider="@drawable/divider_menu_icons_space"
+                        android:showDividers="beginning|middle|end"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="@dimen/menu_icon_size"
+                            android:layout_height="@dimen/menu_icon_size"
+                            android:src="@drawable/close_icon"
+                            android:adjustViewBounds="false"
+                            android:id="@+id/search_close" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ViewFlipper
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/viewFlipper">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <android.support.v4.widget.SwipeRefreshLayout
+                            xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/refresh"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/listView"
+                            android:numColumns="3"
+                            android:divider="@null"
+                            android:paddingTop="5dp"
+                                android:background="#EAEAEA"
+                            android:fastScrollEnabled="true" />
+                        </android.support.v4.widget.SwipeRefreshLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/new_feeds_background"
+                            android:id="@+id/new_feeds_btn_ll"
+                            android:visibility="gone">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:text="New Feeds"
+                                android:id="@+id/new_feeds_btn"
+                                android:layout_centerHorizontal="true"
+                                android:textColor="#000000"
+                                android:gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp" />
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <in.yellowsoft.LetUKnow.MyTextView1
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="world_fragment"
+                        android:id="@+id/label"
+                        android:visibility="gone" />
+                </LinearLayout>
+`
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/imageView41"
+                                android:src="@drawable/newsfeed"
+                                android:adjustViewBounds="false" />
+
+                            <in.yellowsoft.LetUKnow.MyTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="New Text"
+                                android:id="@+id/no_source"
+                                android:textColor="@color/aa_menu_text"
+                                android:textSize="20sp"
+                                android:gravity="center"
+                                android:padding="10dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:background="@drawable/pop_up_rounded_app_blue2"
+                            android:id="@+id/add_source_ll"
+                            android:layout_marginBottom="20dp"
+                            android:visibility="gone">
+
+                            <in.yellowsoft.LetUKnow.MyTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="New Text"
+                                android:id="@+id/add_source_tv"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginRight="30dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="#ffffff"
+                                android:textSize="15sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ViewFlipper>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#92000000"
+            android:id="@+id/pop_up_layout"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pop_up_rounded_blue"
+                android:gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="70dp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="center"
+                    android:background="@drawable/pop_up_rounded_app_blue">
+
+                    <in.yellowsoft.LetUKnow.MyTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select Category"
+                        android:id="@+id/pop_up_label"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gridView"
+                    android:numColumns="1"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/pop_up_rounded_app_blue2"
+                    android:id="@+id/cancel_source_ll">
+
+                    <view
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        class="in.yellowsoft.LetUKnow.MyTextView"
+                        android:id="@+id/cancel_source_tv"
+                        android:text="Cancel"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar1"
+            android:layout_centerInParent="true"
+            android:background="#B9B9B9"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#11ffffff"
+            android:gravity="center"
+            android:id="@+id/progressBar"
+            android:visibility="gone">
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/progressBarrrrrr"
+                android:src="@drawable/output_progress"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
